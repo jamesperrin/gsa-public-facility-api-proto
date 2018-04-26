@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GSA Public Facility Closure Prototype V1c</title>
+    <link rel="stylesheet" href="https://www.gsa.gov/sites/gsa.gov/templates/resources/lib/datatables/media/css/jquery.dataTables.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <span>Navigation:</span>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" title="V1a - Static data source">V1a - Static data source</a>
+                </li>
+                <li>
+                    <a href="index_v1b.html" title="V1b - Google Sheets data source">V1b - Google Sheets data source</a>
+                </li>
+                <li>
+                    <a href="index_v1c.html" title="V1c - Google Sheets data source">V1c - Google Sheets data source</a>
+                </li>
+            </ul>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>GSA Public Facility Closure Prototype V1c</h1>
+    <h2>Using a Google Sheet as a data source with using <a href="https://github.com/jsoma/tabletop" target="_blank" title="Tabletop.js (gives spreadsheets legs)">Tabletop.js</a> library for data retrieval and processing.</h2>
+
+    <hr>
+
+    <h3>
+        GSA Public Building Closures
+    </h3>
+
+    <div style="width: 95%; margin: auto;">
+        <table id="datatable" class="scrollTable_search stripe tablesaw tablesaw-stack" style="table-layout:fixed; width:100%;">
+            <thead>
+                <tr>
+                    <th scope="col">State</th>
+                    <th scope="col">City</th>
+                    <th scope="col">Building Name</th>
+                    <th scope="col">Building sAddress</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <p>The shortcut to this page is
+            <a href="http://www.gsa.gov/facilitystatus" target="_blank">www.gsa.gov/facilitystatus</a>.
+        </p>
+    </div>
+
+    <!-- GSA JavaScript references -->
+    <script type="text/javascript" src="https://www.gsa.gov/sites/all/modules/contrib/jquery_update/replace/jquery/1.12/jquery.min.js?v=1.12.4"></script>
+    <script type="text/javascript" src="https://www.gsa.gov/sites/gsa.gov/templates/resources/lib/datatables/media/js/jquery.dataTables.min.js"></script>
+
+    <!-- Application JavaScript references -->
+    <script type="text/javascript" src="assets/js/tabletop.js"></script>
+    <script type="text/javascript" src="assets/js/renderTable1c.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            // GSA TABLE STYLING
+            var removeClass = false;
+
+            if ((jQuery('.table').length > 0 && (jQuery('.table').hasClass('dataTable') || jQuery('.table').hasClass(
+                    'plainTable')))) {
+                removeClass = true;
+
+                jQuery('.table').removeClass('table');
+            }
+
+            if (jQuery("div.feature-block").length > 0 && jQuery(".feature-block").css("background-image").length >
+                0) {
+                jQuery('div.feature-block > h1').remove();
+
+                if (jQuery('div.feature-block:has(div.no-pad-container)')) {
+                    jQuery('div.feature-block > div.no-pad-container > h1').remove();
+                    jQuery('h1').appendTo(jQuery('div.feature-block > div.no-pad-container'));
+                } else {
+                    // move h1 inside the block
+                    jQuery('h1').appendTo(jQuery('div.feature-block'));
+                }
+                removeClass = true;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+{
+    "data": [
+        {
+            "State": "Puerto Rico",
+            "City": "Carolina",
+            "Building_Name": "Luis Munoz Marin Int'l Airport (leased space)",
+            "Building_Address": "Airport Avenue"
+        },
+        {
+            "State": "Puerto Rico",
+            "City": "Guayama",
+            "Building_Name": "Corretera Estatal #3",
+            "Building_Address": "Ave Albisus Campo"
+        },
+        {
+            "State": "Puerto Rico",
+            "City": "Guaynabo",
+            "Building_Name": "Rexco Industrial Park Building (parking)",
+            "Building_Address": "State Road 165, Street 1"
+        },
+        {
+            "State": "Puerto Rico",
+            "City": "Guaynabo",
+            "Building_Name": "San Juan Foreign Trade Zone (CARIT facility)",
+            "Building_Address": "Road #165, KM 2.4"
+        },
+        {
+            "State": "Puerto Rico",
+            "City": "Hato Rey",
+            "Building_Name": "Plaza 273 ScotiaBank (partially)",
+            "Building_Address": "273 Ponce de Leon Ave."
+        },
+        {
+            "State": "Virgin Islands",
+            "City": "Charlotte Amalie",
+            "Building_Name": "Cyril E. King Airport (STT) (leased space)",
+            "Building_Address": "Cyril E. King Airport"
+        },
+        {
+            "State": "Virgin Islands",
+            "City": "Charlotte Amalie",
+            "Building_Name": "Racetrack Sugarhill Estates (leased space)",
+            "Building_Address": "9846 Estate Thomas"
+        },
+        {
+            "State": "Virgin Islands",
+            "City": "Christiansted",
+            "Building_Name": "Henry E. Rohlsen Airport (leased space)",
+            "Building_Address": "Henry E. Rohlsen Airport"
+        }
+    ]
+}

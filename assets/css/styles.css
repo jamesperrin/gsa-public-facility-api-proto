@@ -1,0 +1,41 @@
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.active{
+    font-weight: bold;
+    text-decoration: underline;
+}
+header span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav {
+    display: inline-block;  
+}
+
+nav ul {
+    padding-left: 0;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li:after {
+    position: relative;
+    content: '|';
+    left: .5em;
+    font-weight: bold;
+}
+
+nav ul li:last-child:after {
+    content: '';
+}
