@@ -27,12 +27,29 @@ function processData(data) {
     // Data container
     var buildingData = [];
 
-    $.each(data.feed.entry, function (i, val) {
+    // Using jQuery to iterate over array elements
+    // $.each(data.feed.entry, function (i, val) {
+    //     // Column names are State, City, Building_Name and Building_Address.
+    //     var state = val.gsx$state.$t;
+    //     var city = val.gsx$city.$t;
+    //     var buildingname = val.gsx$buildingname.$t;
+    //     var buildingaddress = val.gsx$buildingaddress.$t;
+
+    //     buildingData.push({
+    //         "State": state,
+    //         "City": city,
+    //         "Building_Name": buildingname,
+    //         "Building_Address": buildingaddress
+    //     });
+    // });
+
+    // Using VanillaJS  to iterate over array elements
+    data.feed.entry.forEach(function (el) {
         // Column names are State, City, Building_Name and Building_Address.
-        var state = val.gsx$state.$t;
-        var city = val.gsx$city.$t;
-        var buildingname = val.gsx$buildingname.$t;
-        var buildingaddress = val.gsx$buildingaddress.$t;
+        var state = el.gsx$state.$t;
+        var city = el.gsx$city.$t;
+        var buildingname = el.gsx$buildingname.$t;
+        var buildingaddress = el.gsx$buildingaddress.$t;
 
         buildingData.push({
             "State": state,
