@@ -4,6 +4,9 @@
 (function () {
     var RenderTable = {};
 
+    // Datatable surpresses error alert dialog
+    $.fn.dataTable.ext.errMode = 'throw';
+
     // Constants JSON object
     var CONSTANTS = {
         State: 'State',
@@ -16,7 +19,6 @@
      * @description Using an array of JSON objects  as data source
      */
     RenderTable.Version1 = function () {
-
         jQuery('#datatable').dataTable({
             "ajax": "data/public_facilities_v1.json",
             "columns": [{
@@ -35,7 +37,7 @@
             "sAjaxDataProp": ""
         });
     }
-    
+
     /**
      * @description Using a JSON object containing an array of JSON objects as data source
      */
