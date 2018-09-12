@@ -34,10 +34,10 @@ Version-1a demonstrates consuming a flat file data in the following formats.
 
 Version-1b demonstrates consuming a Google Sheet as a data source with using VallinaJS for custom data retrieval and processing.
 
-* _Technology stack:_ [VanillaJS](http://vanilla-js.com/), [jQuery](https://jquery.com/), [Datatables.js](https://datatables.net/), [Googel Sheets](https://www.google.com/sheets/about/)
+* _Technology stack:_ [VanillaJS](http://vanilla-js.com/), [jQuery](https://jquery.com/), [Datatables.js](https://datatables.net/), [Google Sheets](https://www.google.com/sheets/about/)
 
 ### **Verion-1c**
 
 Version-1c demonstrates consuming a Google Sheet as a data source and using [Tabletop.js](https://github.com/jsoma/tabletop) library for data retrieval and processing.
 
-* _Technology stack:_ [VanillaJS](http://vanilla-js.com/), [jQuery](https://jquery.com/), [Datatables.js](https://datatables.net/), [Tabletop.js](https://github.com/jsoma/tabletop) , [Googel Sheets](https://www.google.com/sheets/about/)
+* _Technology stack:_ [VanillaJS](http://vanilla-js.com/), [jQuery](https://jquery.com/), [Datatables.js](https://datatables.net/), [Tabletop.js](https://github.com/jsoma/tabletop) , [Google Sheets](https://www.google.com/sheets/about/)
