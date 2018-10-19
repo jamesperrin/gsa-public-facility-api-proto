@@ -20,7 +20,7 @@ Demo: https://jamesperrin.github.io/gsa-public-facility-api-v1
 
 The API version-1 prototype demonstrates three different methods of consuming public building data.
 
-### **Verion-1a**
+### **Version-1a**
 
 Version-1a demonstrates consuming a flat file data in the following formats.
 
@@ -30,13 +30,13 @@ Version-1a demonstrates consuming a flat file data in the following formats.
 
 * _Technology stack:_ [VanillaJS](http://vanilla-js.com/), [jQuery](https://jquery.com/), [Datatables.js](https://datatables.net/), flat file data
 
-### **Verion-1b**
+### **Version-1b**
 
 Version-1b demonstrates consuming a Google Sheet as a data source with using VallinaJS for custom data retrieval and processing.
 
 * _Technology stack:_ [VanillaJS](http://vanilla-js.com/), [jQuery](https://jquery.com/), [Datatables.js](https://datatables.net/), [Google Sheets](https://www.google.com/sheets/about/)
 
-### **Verion-1c**
+### **Version-1c**
 
 Version-1c demonstrates consuming a Google Sheet as a data source and using [Tabletop.js](https://github.com/jsoma/tabletop) library for data retrieval and processing.
 
