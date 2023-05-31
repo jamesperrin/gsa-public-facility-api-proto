@@ -1,6 +1,6 @@
 # **GSA Public Facility API Prototype Version-1**
 
-Demo: https://jamesperrin.github.io/gsa-public-facility-api-v1
+Demo: https://jamesperrin.github.io/gsa-public-facility-api-proto/
 
 ## **Purpose**
 
